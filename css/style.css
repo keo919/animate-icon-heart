@@ -31,7 +31,6 @@ body{
 
 
 
-
 .container .icon.heart path{
     stroke-dasharray: 1560;
     stroke-dashoffset: 0;
@@ -39,7 +38,7 @@ body{
 }
 .container .icon.heart:hover path{
     animation: animate-heart 1.5s linear forwards;
-   
+    
 }
 @keyframes animate-heart{
     0%
@@ -59,9 +58,38 @@ body{
     100%
     {
         stroke-dashoffset: 3120;
-        fill: rgb(0, 255, 255);
+        fill: rgb(54, 255, 54);
     }
 }
+.container .icon.heart path{
+    fill: transparent;
+    stroke-width: 10;
+    stroke:  rgb(0, 0, 0);
+ }
+ .container .icon.heart{
+    box-shadow: 0 0 50px rgb(54, 255, 54)
+    ,0 0 100px  rgb(54, 255, 54)
+    ,0 0 150px  rgb(54, 255, 54)
+    ,0 0 200px  rgb(54, 255, 54)
+    ,0 0 250px  rgb(54, 255, 54);
+    animation:  animated-heart 10s linear infinite;
+    border-radius: 5%;
+    background:   rgb(54, 255, 54);
+    /*transform: scale(1.1,1.1);*/
+}
+@keyframes animated-heart{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+
+
 
 
 
@@ -91,14 +119,40 @@ body{
     100%
     {
         stroke-dashoffset: 3640;
-        fill: rgb(255, 0, 170);
+        fill: rgb(255, 41, 184);
     }
 }
 .container .icon.heart2 path{
     fill: transparent;
     stroke-width: 10;
-    stroke:  rgb(255, 0, 170);
+    stroke:  rgb(172, 0, 114);
  }
+ .container .icon.heart2:hover{
+    box-shadow: 0 0 50px rgb(255, 41, 184)
+    ,0 0 100px  rgb(255, 41, 184)
+    ,0 0 150px  rgb(255, 41, 184)
+    ,0 0 200px  rgb(255, 41, 184)
+    ,0 0 250px  rgb(255, 41, 184);
+    animation:  animated-heart2 10s linear infinite;
+    border-radius: 5%;
+    background:   rgb(255, 41, 184);
+    transform: scale(1.1,1.1);
+}
+@keyframes animated-heart2{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -135,9 +189,27 @@ body{
 .container .icon.heart3 path{
     fill: transparent;
     stroke-width: 10;
-    stroke:  rgb(255, 0, 0);
+    stroke:  rgb(151, 0, 0);
  }
-
+ .container .icon.heart3:hover{
+    box-shadow: 0 0 50px rgb(255, 0, 0)
+    ,0 0 100px  rgb(255, 0, 0)
+    ,0 0 150px  rgb(255, 0, 0)
+    ,0 0 200px  rgb(255, 0, 0)
+    ,0 0 250px  rgb(255, 0, 0);
+    animation:  animated-heart3 10s linear infinite;
+    border-radius: 5%;
+    background:   rgb(255, 0, 0);
+    transform: scale(1.1,1.1);
+}
+@keyframes animated-heart3{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
 
 
 
@@ -148,7 +220,7 @@ body{
  .container .icon.heart4 path{
     stroke-dasharray: 1560;
     stroke-dashoffset: 0;
-    transition: 1s;
+    transition: 2s;
     
 }
 .container .icon.heart4:hover path{
@@ -175,10 +247,15 @@ body{
     100%
     {
         stroke-dashoffset: 3120;
-        fill: rgb(0, 255, 255);
+        fill: rgb(147, 255, 250);
     }
 }
-.container .icon.heart4:hover{
+.container .icon.heart4 path{
+    fill: transparent;
+    stroke-width: 10;
+    stroke:  rgb(0, 0, 0)
+ }
+.container .icon.heart4 {
     box-shadow: 0 0 50px rgb(147, 255, 250)
     ,0 0 100px  rgb(147, 255, 250)
     ,0 0 150px  rgb(147, 255, 250)
@@ -187,6 +264,7 @@ body{
     animation:  animated-heart4 10s linear infinite;
     border-radius: 5%;
     background:   rgb(147, 255, 250);
+    /*transform: scale(1.1,1.1);*/
 }
 @keyframes animated-heart4{
     0%{
